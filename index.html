@@ -18,28 +18,47 @@
       <a class="clear-button" href="#">Clear All</a>
       <div class="mortage-amount__container">
         <div>Mortgage Amount</div>
-        <div class="mortage-amount-input__container">
-          <div class="pound-symbol">£</div>
-          <input type="text" />
+        <div class="mortage-input__container">
+          <div class="input-inset__pound">£</div>
+          <input class="input-text" type="text" />
         </div>
       </div>
       <div class="mortage-amount__container">
         <div>Mortgage Term</div>
-        <input type="text" />
-        <div>years</div>
+        <div class="mortage-input__container">
+          <input class="input-text" type="text" />
+          <div class="input-inset__years">years</div>
+        </div>
       </div>
       <div class="mortage-amount__container">
         <div>Interest Rate</div>
-        <input type="text" />
-        <div>%</div>
+        <div class="mortage-input__container">
+          <input class="input-text" type="text" />
+          <div class="input-inset__percent">%</div>
+        </div>
       </div>
       <div>Mortgage type</div>
-      <div>
-        <input class="bold-font" type="radio" name="" id="" />Repayment
-        <input class="bold-font" type="radio" name="" id="" />Interest Only
+      <div class="radio-button__container">
+        <input
+          type="radio"
+          name="mortgage-type"
+          id="repayment"
+          value="repayment"
+        />
+        <label class="bold-font" for="repayment">Repayment</label>
       </div>
-      <img src="./assets/images/icon-calculator.svg" alt="calculator-icon" />
-      <div class="bold-font">Calculate Repayments</div>
+      <div class="radio-button__container">
+        <input
+          type="radio"
+          name="mortgage-type"
+          id="interest-only"
+          value="interest-only"
+        /><label class="bold-font" for="interest-only">Interest Only</label>
+      </div>
+      <div class="calculate-button">
+        <img src="./assets/images/icon-calculator.svg" alt="calculator-icon" />
+        <div class="bold-font">Calculate Repayments</div>
+      </div>
     </div>
     <img
       src="./assets/images/illustration-empty.svg"
