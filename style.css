@@ -13,9 +13,13 @@
   font-weight: bold;
 }
 
+body {
+  margin: 0;
+}
+
 .top-section__container {
   width: 92%;
-  margin: auto;
+  margin: 1.5rem auto;
 }
 
 .main-header {
@@ -83,4 +87,18 @@ label {
   margin: 1rem 0;
   padding: 0.6rem;
   border-radius: 1.5rem;
+}
+
+.bottom-section__container {
+  background-color: hsl(202, 55%, 16%);
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.bottom-section__container > h4 {
+  color: hsl(0, 0%, 100%);
+}
+
+.bottom-section__container > p {
+  color: hsl(200, 24%, 40%);
 }
